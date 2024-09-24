@@ -12,6 +12,16 @@ import DarkModeToggle from './Programs/DarkModeToggle'
 import InputMasking from './Programs/InputMasking'
 import SearchFilter from './Programs/SearchFilter'
 import CascadingDropdown from './Programs/CascadingDropdown'
+import Accordion from './Programs/Accordion'
+import MemoizationCallbackuseMemo from './Programs/MemoizationCallbackuseMemo'
+import Pagination from './Programs/Pagination'
+import EventHandlingDemo from './Programs/EventHandlingDemo'
+import DragAndDropList from './Programs/DragAndDropList'
+import Stopwatch from './Programs/Stopwatch'
+import ParentModal from './Programs/ParentModal'
+import ParentErrorBoundary from './Programs/ParentErrorBoundary'
+import ParentLogin from './Programs/ParentLogin'
+import FormComponent from './Programs/FormComponent'
 
 function App() {
 
@@ -32,8 +42,17 @@ function App() {
        {/* <DarkModeToggle /> */}
        {/* <InputMasking /> */}
         {/* <SearchFilter /> */}
-        <CascadingDropdown />
-
+        {/* <CascadingDropdown /> */}
+        {/* <Accordion/> */}
+        {/* <MemoizationCallbackuseMemo /> */}
+        {/* <Pagination /> */}
+        {/* <EventHandlingDemo /> */}
+        {/* <DragAndDropList /> */}
+        {/* <Stopwatch/> */}
+        {/* <ParentModal /> */}
+        {/* <ParentErrorBoundary /> */}
+        {/* <ParentLogin/> */}
+        <FormComponent />
 
       </div>
     
