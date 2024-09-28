@@ -22,6 +22,18 @@ import ParentModal from './Programs/ParentModal'
 import ParentErrorBoundary from './Programs/ParentErrorBoundary'
 import ParentLogin from './Programs/ParentLogin'
 import FormComponent from './Programs/FormComponent'
+import ParentCustomHook from './Programs/ParentCustomHook'
+import InfiniteScroll1 from './Programs/InfiniteScroll1'
+import InfiniteScrollObserver from './Programs/InfiniteScrollObserver'
+import DynamicTable from './Programs/DynamicTable'
+import DynamicForm from './Programs/DynamicForm'
+import SimpleStarRating from './Programs/SimpleStarRating'
+import MainParentTraffic from './Programs/MainParentTraffic'
+import Player from './Programs/Player'
+import SearchBar from './Programs/HALFIMPLEMENTSearchBar'
+import Carousel from './Programs/Carousel'
+
+
 
 function App() {
 
@@ -52,7 +64,17 @@ function App() {
         {/* <ParentModal /> */}
         {/* <ParentErrorBoundary /> */}
         {/* <ParentLogin/> */}
-        <FormComponent />
+        {/* <FormComponent /> */}
+        {/* <ParentCustomHook /> */}
+        {/* <InfiniteScroll1 />  NOT WORKING PROPERLY SO USE INTERSECTIONOBSERVER API*/} 
+        {/* <InfiniteScrollObserver/> */}
+        {/* <DynamicTable/> */}
+        {/* <DynamicForm /> */}
+        {/* <SimpleStarRating /> */}
+        {/* <MainParentTraffic /> */}
+        {/* <Player /> */}
+        {/* <SearchBar /> */}
+        <Carousel />
 
       </div>
     
