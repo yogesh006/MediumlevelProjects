@@ -1,0 +1,59 @@
+import React, {useState} from 'react'
+import Welcome from './Welcome'
+
+
+const users = [
+  {username: 'admin', password:'password123'},
+  {username: 'user', password:'test'}
+]
+
+export default function App(){
+
+  const [username, setUsername]=useState('')
+  const [password, setPassword]=useState('')
+  const [isLoggedIn, setIsLoggedIn]=useState(false)
+  const [errors, setErros]=useState('')
+
+  const handleLogin=()=>{
+    if(!username || !password){
+      setErros("bpthe field are required")
+      return
+    }
+
+    const Validate = users.find(user=> user.username===username && user.password===password)
+
+    if(Validate){
+      setIsLoggedIn(true)
+      setErros('')
+    }else{
+      setErros("Invalid cred")
+    }
+  }
+
+  const handleLogout=()=>{
+    setIsLoggedIn(false)
+   setUsername('')
+   setPassword('')
+  }
+
+  return(
+    <div>
+      {
+        !isLoggedIn? (
+        <div>
+            <div>
+              {errors && <p>{errors}</p>}
+              <input type='text' value={username} placeholder='name' onChange={(e)=> setUsername(e.target.value)} />
+              <br/>
+              <input type='password' value={password} placeholder='password' onChange={(e)=> setPassword(e.target.value)} />
+              <br/>
+              <button onClick={handleLogin}>login</button>
+            </div>
+        </div>):(
+          <Welcome username={username} onLogout={handleLogout}/>
+        )
+      }
+    </div>
+  )
+
+}
